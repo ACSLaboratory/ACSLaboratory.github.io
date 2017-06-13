@@ -10,7 +10,7 @@ markdown: kramdown
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation template for Jekyll.
+description: Project website for the Autonomous Collective Systems Laboratory.
 author:
   name:
   email:
