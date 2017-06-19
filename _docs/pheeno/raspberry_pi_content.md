@@ -32,7 +32,7 @@ A quick startup guide can be found [here](https://www.raspberrypi.org/help/noobs
 ### Making Sure the Camera Works!
 Again, a great guide with video is [here](https://www.raspberrypi.org/help/camera-module-setup/). Again below will summarize the steps to making sure the camera works!
 
-First let's physically install the camera board.*<font color="red">Make sure your Pi is off when installing!</font>* The flex cable has gray connector strips on the back side. Behind the Ethernet port is a black plastic connector this goes into. Lift the plastic tabs on the side of this connector to unlock the connector. Insert the flex cable so the tin connectors are facing away from the ethernet port and are level. Push the plastic tabs back down so the wire is locked in place. When done, the setup should look like Figure [1](raspberry_pi_content#fig1). Great now the camera is physically installed!
+First let's physically install the camera board.*<font color="red">Make sure your Pi is off when installing!</font>* The flex cable has gray connector strips on the back side. Behind the Ethernet port is a black plastic connector this goes into. Lift the plastic tabs on the side of this connector to unlock the connector. Insert the flex cable so the tin connectors are facing away from the ethernet port and are level. Push the plastic tabs back down so the wire is locked in place. When done, the setup should look like Figure [1](#fig1). Great now the camera is physically installed!
 
 <figure id="fig1">
     <center>
@@ -44,20 +44,20 @@ First let's physically install the camera board.*<font color="red">Make sure you
 Now we can fully connect the Raspberry Pi again. Make sure it is connected to the internet by plugging in an ethernet chord or connecting via wifi. When it boots open the command terminal and upgrade the firmware to the latest version through the commands:
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+$ sudo apt-get update
+$ sudo apt-get upgrade
 ```
 
 Now we will let the Pi know we want it to use the camera pins. In the command terminal type:
 
 ```bash
-sudo raspi-config
+$ sudo raspi-config
 ```
 
-to bring up the configuration settings for the Pi. Go to the *Enable Camera* option. Choose the enable option. Select finish and reboot the Pi! Now everything should be ready to take a picture so lets try! First, go to the graphical user interface (type *startx* at the terminal).  To test it open the command terminal (seen in Figure [2](raspberry_pi_content#fig2)) and type:
+to bring up the configuration settings for the Pi. Go to the *Enable Camera* option. Choose the enable option. Select finish and reboot the Pi! Now everything should be ready to take a picture so lets try! First, go to the graphical user interface (type *startx* at the terminal).  To test it open the command terminal (seen in Figure [2](#fig2)) and type:
 
 ```bash
-raspivid -t 10000
+$ raspivid -t 10000
 ```
 
 <figure id="fig2">
@@ -76,23 +76,23 @@ In this section we will set up a VNC (Virtual Network Computing) server in order
 It is important to note unlike a standard Windows, Linux, or Mac operating system, *<font color="red">Raspbian does not notify you of updates</font>*. Thus, it is a good habit to force your Pi to look for updates whenever installing new software (ideally daily but that may be overkill). Thus before doing anything bring up the terminal and update and upgrade the Pi through the commands:
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+$ sudo apt-get update
+$ sudo apt-get upgrade
 ```
 
 Now, we can configure the network through the terminal or the GUI, I will outline both below.
 
 #### Terminal Network Set-Up
-Once the upgrade is complete, first install *wpasupplicant* (<font color="red">Note</font>: This may already be installed).
+Once the upgrade is complete, first install `wpasupplicant` (<font color="red">Note</font>: This may already be installed).
 
 ```bash
-sudo apt-get install wpasupplicant
+$ sudo apt-get install wpasupplicant
 ```
 
-You may get a message saying *wpasupplicant* is already in the newest version, that is fine. Once it is installed use any text editor to open the network config file (here we use nano which will open it in the terminal):
+You may get a message saying `wpasupplicant` is already in the newest version, that is fine. Once it is installed use any text editor to open the network config file (here we use nano which will open it in the terminal):
 
 ```bash
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 Here is where you put the network information. Leave the first two lines of the file as they are, then add:
@@ -113,7 +113,7 @@ Replace **"_your network id_"** and **"_your network key_"** with your network n
 Save the file and reboot your Pi for the changes to take place.
 
 ```bash
-sudo shutdown -r now
+$ sudo shutdown -r now
 ```
 
 When the Pi reboots, you should have a wireless connection!
@@ -125,10 +125,10 @@ In the top right of the desktop of the Pi you will see a wifi icon. Click it, ch
 Now to make sure the Pi is connected to the internet bring up the terminal and type:
 
 ```bash
-ifconfig
+$ ifconfig
 ```
 
-This displays all your internet connections! You should see three connections listed eth0, lo, and wlan0. Eth0 is your ethernet cable connection if you have one, wlan0 is the one that should have just been configured. If there is an IP address <font color="magenta">WOO HOO</font> the Pi is connected to the internet. To make sure try connecting to your favorite web page (if your network has an internet connection and isn't a LAN)
+This displays all your internet connections! You should see three connections listed `eth0`, `lo`, and `wlan0`. `Eth0` is your ethernet cable connection if you have one, `wlan0` is the one that should have just been configured. If there is an IP address <font color="magenta">WOO HOO</font> the Pi is connected to the internet. To make sure try connecting to your favorite web page (if your network has an internet connection and isn't a LAN)
 
 ### Creating a Static IP on the Network
 In order to connect to your Pi you must know it's "name". Imagine your Pi as another person. If you want to get their attention from across the room you typically have to yell their name. This is where a Static IP address comes in! Think of a Pi's IP address as its name (this is true for any network device). The funny thing about computers on a network is they can change their IP address whenever they connect, thus we have to set the Pi's IP address so when we try to connect to it we call it the right "name" to get its attention. If you don't care for this metaphor you are going to have to do this anyway!
@@ -136,10 +136,10 @@ In order to connect to your Pi you must know it's "name". Imagine your Pi as ano
 First we need some information about your connection. In the terminal enter:
 
 ```bash
-ifconfig
+$ ifconfig
 ```
 
-Again this should list some connection information, eth0, lo, wlan0. We are attempting to create a static IP on the wireless network thus take note of several details about the wlan0. We are interested in (write these down!),
+Again this should list some connection information, `eth0`, `lo`, `wlan0`. We are attempting to create a static IP on the wireless network thus take note of several details about the `wlan0`. We are interested in (write these down!),
 
 * ***inet addr*** - the Pi's current IP address.
 * ***Bcast*** - the broadcast IP range.
@@ -148,9 +148,9 @@ Again this should list some connection information, eth0, lo, wlan0. We are atte
 We need a little more information to finish this up. So now, in the terminal, enter,
 
 ```bash
-netstat-nr
+$ netstat-nr
 ```
-We are interested in (write down the ones that are not 0.0.0.0),
+We are interested in (write down the ones that are not `0.0.0.0`),
 
 * ***Gateway***
 * ***Destination***
@@ -158,7 +158,7 @@ We are interested in (write down the ones that are not 0.0.0.0),
 Now the config file can finally be edited to gives a static IP! Let's open it to be edited in the terminal by entering,
 
 ```bash
-sudo nano /etc/network/interfaces
+$ sudo nano /etc/network/interfaces
 ```
 You should get something that looks like this,
 
@@ -176,7 +176,7 @@ iface eth0 inet manual
 wpa-config /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-It may have some additional entries but that should be what it looks like for the most part. Again, if you are worried about security, the wpa_supplicant.conf has the network information and password in a plain text file that can be read very easily.
+It may have some additional entries but that should be what it looks like for the most part. Again, if you are worried about security, the `wpa_supplicant.conf` has the network information and password in a plain text file that can be read very easily.
 
 Now let's enter the information for our static IP! Edit the file so that it looks like this!
 
@@ -202,19 +202,19 @@ wpa-config /etc/wpa_supplicant/wpa_supplicant.conf
 Exit and save the file! Now reboot the Pi,
 
 ```bash
-sudo shutdown -r now
+$ sudo shutdown -r now
 ```
 
 To see if everything worked open the terminal and type,
 
 ```bash
-ifconfig
+$ ifconfig
 ```
 
-Under wlan0 the IP address should be the one you set! Now to test the connection type,
+Under `wlan0` the IP address should be the one you set! Now to test the connection type,
 
 ```bash
-ping "_the gateway found above_"
+$ ping "_the gateway found above_"
 ```
 
 If everything if configured correctly you should get a few printouts that read,
@@ -230,38 +230,39 @@ If all of that works <font color="magenta">CONGRATS</font> you have now set a st
 Secure Shell allows us to remotely log into the raspberry pi but only in a terminal setting. However, you will notice everything we have done has been through the terminal so this is invaluable. We will first enable this on the Pi! In the terminal enter,
 
 ```bash
-sudo raspi-config
+$ sudo raspi-config
 ```
 
-Under <font color="red">Advanced Options</font> select SSH and enable. That's it! Now onto your PC. For SSH I use Putty to connect (on windows). Putty can be downloaded [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Now simply run it and enter the static IP address you created earlier! It should prompt you with,
+Under <font color="red">Advanced Options</font> select SSH and enable. That's it! Now onto your PC. For SSH I use PuTTy to connect (on windows). Putty can be downloaded [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Now simply run it and enter the static IP address you created earlier! It should prompt you with,
 
 ```bash
 login as: "_the username for the pi (default is pi)_"
 pi@: "_the IP address of the Pi_" password: "_the password for the pi (default is raspberry)_"
 ```
+
 Now you should be logged into the terminal of the Pi! <font color="red">Note</font>: This can be done on Linux as well by using the command,
 
 ```bash
-ssh -l pi "_the IP address of the Pi_"
+$ ssh -l pi "_the IP address of the Pi_"
 ```
 
 #### VNC
 Virtual Network Computing (VNC) is useful for those less Linux savy. It allows for the user to see the desktop of the Pi instead of the terminal. The terminal and other programs may still be accessed like you were logged straight into the Pi. However, some things, like video streams, might not work as if you were hooked straight into the machine. This is simple enough to install. On the Pi open the terminal and enter,
 
 ```bash
-sudo apt-get install tightvncserver
+$ sudo apt-get install tightvncserver
 ```
 
 This installs TightVNC, which is possibly the easiest VNC package to get running. Once it is installed you can start the server with a command line,
 
 ```bash
-vncserver :1 -geometry 1024x768 -depth 16
+$ vncserver :1 -geometry 1024x768 -depth 16
 ```
 
 On your personal computer install a VNC client. I recommend realVNC found [here](http://www.realvnc.com/download/). You may have to enter some information for a free key which is good for 5 computers. To connect to the Pi through VNC enter,
 
 ```bash
-"_the IP address of the PI_":1
+$ "_the IP address of the PI_":1
 ```
 
 You can get this to start on boot. However, it is probably better to ssh in and start the server when needed.
@@ -272,12 +273,12 @@ Now let's pretend we don't live in a perfect world where we always have a networ
 Once again we have to edit the interfaces file! I would *<font color="red">STRONGLY</font>* recommend making two files saved somewhere. One for when you are in the lab, and one when you are in the field. None the less again we must edit the interfaces file,
 
 ```bash
-sudo nano /etc/network/interfaces
+$ sudo nano /etc/network/interfaces
 ```
 
 We want to edit the wireless section again so it looks like the following,
 
-```bash
+```
 auto wlan0
 iface wlan0 inet static
 address "_some IP address (192.168.119.1)_"
@@ -290,20 +291,20 @@ wireless-mode ad-hoc
 Save the file and exit. Then restart the wireless connection,
 
 ```bash
-sudo ifdown wlan0
-sudo ifup wlan0
+$ sudo ifdown wlan0
+$ sudo ifup wlan0
 ```
 
-Now you should be able to see the network being broadcast. <font color="red">Do not connect to it</font>. It is not ready to receive connections. It is simply broadcasting it's ad-hoc network but will not assign IP addresses to any computer connecting to it. We need to set up the Pi to assign IP addresses. First we will install isc-dhcp-server,
+Now you should be able to see the network being broadcast. <font color="red">Do not connect to it</font>. It is not ready to receive connections. It is simply broadcasting it's ad-hoc network but will not assign IP addresses to any computer connecting to it. We need to set up the Pi to assign IP addresses. First we will install `isc-dhcp-server`,
 
 ```bash
-sudo apt-get install isc-dhcp-server
+$ sudo apt-get install isc-dhcp-server
 ```
 
 Now we have to edit the config file to get it to work! Open the config file with the command,
 
 ```bash
-sudo nano /etc/dhcp/dhcpd.conf
+$ sudo nano /etc/dhcp/dhcpd.conf
 ```
 
 There is a TON of stuff in this file. You want the only uncommented lines to be (changes in <font color="red">red</font>),
@@ -437,17 +438,17 @@ range 192.168.119.5 192.168.119.100;
 Pheeno uses OpenCV for its image processing and I have chosen to code in Python (as C/C++ get too messy for me). To finish the set up for the Pi let's install OpenCV for python and make sure it runs. Again make sure the firmware is updated and upgraded,
 
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+$ sudo apt-get update
+$ sudo apt-get upgrade
 ```
 
 Now we will grab the libraries for OpenCV.
 
 ```bash
-sudo apt-get install libopencv-dev python-opencv python-picamera -y
+$ sudo apt-get install libopencv-dev python-opencv python-picamera -y
 ```
 
-To test whether everything is working properly let's create a quick python code with OpenCV to display some windows with the camera feed and mess with their colors! Make a new python code and save it in the home folder as *<font color="red">cameraDisplay.py</font>*. Open this empty file and fill it with,
+To test whether everything is working properly let's create a quick python code with OpenCV to display some windows with the camera feed and mess with their colors! Make a new python code and save it in the home folder as `cameraDisplay.py`. Open this empty file and fill it with,
 
 ```python
 import picamera
@@ -479,7 +480,7 @@ with picamera.PiCamera() as camera:
 To run it open the terminal and enter,
 
 ```bash
-python cameraDisplay.py
+$ python cameraDisplay.py
 ```
 
 Three windows should pop up and show the camera feed with different color schemes (RGB, Gray Scale, and HSV). If that works, <font color="magenta">YOU'RE DONE</font>! The Pi should be ready to go and be used however you see fit!

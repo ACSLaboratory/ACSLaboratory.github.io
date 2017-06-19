@@ -8,8 +8,8 @@ order: 3
 
 Currently, Pheeno files can run on all major platforms (Windows, Linux, and OS X) all that is required is cloning the repository to your system.
 
-```
-git clone https://github.com/ACSLab/PheenoRobot.git
+```bash
+$ git clone https://github.com/ACSLab/PheenoRobot.git
 ```
 
 The following dependencies/programs are required to use these files:
