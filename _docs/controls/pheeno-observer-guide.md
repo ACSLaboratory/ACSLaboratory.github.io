@@ -20,7 +20,7 @@ Pheeno is equipped with a MiniIMU-9 v5 made by Pololu. This little board contain
 
 <figure id="FigPheenoRefFrame">
    <center>
-       <img src="{{ site.url }}/images/observer/PheenoOHLabeled.png" width="400" height="400" />
+       <img src="{{ site.baseurl }}/images/observer/PheenoOHLabeled.png" width="400" height="400" />
        <figcaption><strong>Figure 1:</strong> The reference frame of Pheeno. Ideally, this should be the same reference frame as the inertial measurement unit.</figcaption>
    </center>
 </figure>
@@ -52,7 +52,7 @@ From these results, an accelerometer should really only be used to determine the
 
 <figure id="FigAccRest">
    <center>
-       <img src="{{ site.url }}/images/observer/AccelerometerRestingTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/AccelerometerRestingTimePlot.jpg" width="500" height="500" />
        <figcaption><strong>Figure 2:</strong> The time evolution of raw accelerometer data along each axis of the magnetometer measured when Pheeno is resting on a table. The blue line is along the x-direction of the IMU, the red line is along the y-direction of the IMU, and the black line is along the z-direction of the IMU.</figcaption>
    </center>
 </figure>
@@ -61,7 +61,7 @@ From these results, an accelerometer should really only be used to determine the
 
 <figure id="FigNoBiasY">
    <center>
-       <img src="{{ site.url }}/images/observer/AccelerometerYAXISNoBiasRestingTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/AccelerometerYAXISNoBiasRestingTimePlot.jpg" width="500" height="500" />
        <figcaption><strong>Figure 3:</strong> The time evolution of raw accelerometer data (black) and averaged accelerometer data (red) along the y-direction of the IMU after the time averaged bias is subtracted. The average line is a running $100$ sample average.</figcaption>
    </center>
 </figure>
@@ -70,7 +70,7 @@ From these results, an accelerometer should really only be used to determine the
 
 <figure id="FigVelFromAcc">
    <center>
-       <img src="{{ site.url }}/images/observer/VelocityFromIntegrationTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/VelocityFromIntegrationTimePlot.jpg" width="500" height="500" />
        <figcaption><strong>Figure 4:</strong> The time evolution of the approximation of velocity after integrating accelerometer measurements from Figure 3. The blue line is from integrating the raw accelerometer data, the red line is from integrating the running $100$ sample averaged accelerometer data.</figcaption>
    </center>
 </figure>
@@ -79,7 +79,7 @@ From these results, an accelerometer should really only be used to determine the
 
 <figure id="FigPosFromAcc">
    <center>
-       <img src="{{ site.url }}/images/observer/PositionFromIntegrationTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/PositionFromIntegrationTimePlot.jpg" width="500" height="500" />
        <figcaption><strong>Figure 5:</strong> The time evolution of the approximation of position after integrating accelerometer measurements  from Figure 3 twice. The blue line is from integrating the raw accelerometer data, the red line is from integrating the running 100 sample averaged accelerometer data.</figcaption>
    </center>
 </figure>
@@ -99,14 +99,14 @@ The weakness of gyroscope measurements is commonly referred to as *drift*, where
 
 <figure id="FigGyroRawA">
    <center>
-       <img src="{{ site.url }}/images/observer/GyroRawTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/GyroRawTimePlot.jpg" width="500" height="500" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigGyroRawB">
    <center>
-       <img src="{{ site.url }}/images/observer/GyroCalibratedRawTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/GyroCalibratedRawTimePlot.jpg" width="500" height="500" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -118,14 +118,14 @@ The weakness of gyroscope measurements is commonly referred to as *drift*, where
 
 <figure id="FigGyroOrientationA">
    <center>
-       <img src="{{ site.url }}/images/observer/GyroAngleTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/GyroAngleTimePlot.jpg" width="500" height="500" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigGyroOrientationB">
    <center>
-       <img src="{{ site.url }}/images/observer/GyroCalibratedAngleTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/GyroCalibratedAngleTimePlot.jpg" width="500" height="500" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -162,14 +162,14 @@ Pheeno uses magnetic quadrature encoders that use hall effect sensors to detect 
 
 <figure id="FigEncoderDiagramA">
    <center>
-       <img src="{{ site.url }}/images/observer/EncoderDiagram.jpg" width="400" height="400" />
+       <img src="{{ site.baseurl }}/images/observer/EncoderDiagram.jpg" width="400" height="400" />
        <figcaption>(a) Diagram of an incremental (top) and absolute (bottom) optical encoder.</figcaption>
    </center>
 </figure>
 
 <figure id="FigEncoderDiagramB">
    <center>
-       <img src="{{ site.url }}/images/observer/QuadratureEncoderDiagram.png" width="400" height="400" />
+       <img src="{{ site.baseurl }}/images/observer/QuadratureEncoderDiagram.png" width="400" height="400" />
        <figcaption>(b) Diagram of an incremental quadrature optical encoder (top) and the produced signal (bottom).</figcaption>
    </center>
 </figure>
@@ -187,7 +187,7 @@ Pheeno uses six Sharp GP2Y0A41SK0F analog infrared distance sensors to sense lin
 
 <figure id="FigIRCartoon">
    <center>
-       <img src="{{ site.url }}/images/observer/IRCartoon.png" width="400" height="400" />
+       <img src="{{ site.baseurl }}/images/observer/IRCartoon.png" width="400" height="400" />
        <figcaption><strong>Figure 9:</strong> A cartoon representation of how an infrared distance sensor determines distance of obstacles. A *light emitting diode* (LED) emits a beam of light through a lens which reflects off a surface (S1, S2) and hits a different location on the *position-sensible photo detector* (PSD).</figcaption>
    </center>
 </figure>
@@ -331,7 +331,7 @@ These angles should be saved. To use this calibration properly, any measurement 
 
 <figure id="FigFFTAccX">
    <center>
-       <img src="{{ site.url }}/images/observer/OneSidedFFTAmplitudeXDir.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/OneSidedFFTAmplitudeXDir.jpg" width="500" height="500" />
        <figcaption><strong>Figure 10:</strong> The single-sided amplitude spectrum of the resting accelerometer data along the x-axis.</figcaption>
    </center>
 </figure>
@@ -340,7 +340,7 @@ These angles should be saved. To use this calibration properly, any measurement 
 
 <figure id="FigHistAccX">
    <center>
-       <img src="{{ site.url }}/images/observer/HistogramDistributionAccelerometerXDir.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/HistogramDistributionAccelerometerXDir.jpg" width="500" height="500" />
        <figcaption><strong>Figure 11:</strong> Histogram of the resting accelerometer data along the x-axis.</figcaption>
    </center>
 </figure>
@@ -349,21 +349,21 @@ These angles should be saved. To use this calibration properly, any measurement 
 
 <figure id="FigRollPitchYawCartoonA">
    <center>
-       <img src="{{ site.url }}/images/observer/RollCartoon.png" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/RollCartoon.png" width="500" height="500" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigRollPitchYawCartoonB">
    <center>
-       <img src="{{ site.url }}/images/observer/PitchCartoon.png" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/PitchCartoon.png" width="500" height="500" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
 
 <figure id="FigRollPitchYawCartoonC">
    <center>
-       <img src="{{ site.url }}/images/observer/YawCartoon.png" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/YawCartoon.png" width="500" height="500" />
        <figcaption>(c)</figcaption>
    </center>
 </figure>
@@ -425,14 +425,14 @@ $$
 
 <figure id="FigMagnetometerA">
    <center>
-       <img src="{{ site.url }}/images/observer/MagUncalibratedPlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/MagUncalibratedPlot.jpg" width="500" height="500" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigMagnetometerB">
    <center>
-       <img src="{{ site.url }}/images/observer/MagCalibratedPlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/MagCalibratedPlot.jpg" width="500" height="500" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -503,7 +503,7 @@ While the [basic complementary filter](#complementary-filter-basic) gives a basi
 
 <figure id="FigCFBlock">
    <center>
-       <img src="{{ site.url }}/images/observer/ComplementaryFilter.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/ComplementaryFilter.jpg" width="500" height="500" />
        <figcaption><strong>Figure 14:</strong> Block diagram of a complementary filter fusing a gyroscope angular measurement with an accelerometer angular measurement.</figcaption>
    </center>
 </figure>
@@ -543,14 +543,14 @@ This design mostly comes from experience working with the sensors and in applica
 
 <figure id="FigCFEstimatesA">
    <center>
-       <img src="{{ site.url }}/images/observer/ComplementaryFilterPitchTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/ComplementaryFilterPitchTimePlot.jpg" width="500" height="500" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigCFEstimatesB">
    <center>
-       <img src="{{ site.url }}/images/observer/ComplementaryFilterPitchZOOMEDTimePlot.jpg" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/observer/ComplementaryFilterPitchZOOMEDTimePlot.jpg" width="500" height="500" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -568,7 +568,7 @@ Further analysis of [Figure 15](#FigCFEstimatesA) gives a good idea of how this 
 
 <figure id="FigPheenoIR">
    <center>
-       <img src="{{ site.url }}/images/observer/PheenoIR.png" width="400" height="400" />
+       <img src="{{ site.baseurl }}/images/observer/PheenoIR.png" width="400" height="400" />
        <figcaption><strong>Figure 16:</strong> A top view of Pheeno with red trapezoids superimposed to represent the infrared distance sensing skirt.</figcaption>
    </center>
 </figure>

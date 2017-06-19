@@ -112,28 +112,28 @@ There should be a USB chord coming out from the Pheeno robot to the Raspberry Pi
 
 <figure id="fig1a">
     <center>
-        <img src="{{ site.url }}/images/programming/ArduinoChangeBoard.jpg" width="450px" height="500px" />
+        <img src="{{ site.baseurl }}/images/programming/ArduinoChangeBoard.jpg" width="450px" height="500px" />
         <figcaption>(a) Changing the Board of the Arduino software.</figcaption>
     </center>
 </figure>
 
 <figure id="fig1b">
     <center>
-        <img src="{{ site.url }}/images/programming/ArduinoChangeProcessor.jpg" width="450px" height="500px" />
+        <img src="{{ site.baseurl }}/images/programming/ArduinoChangeProcessor.jpg" width="450px" height="500px" />
         <figcaption>(b) Changing the processor of the Arduino software.</figcaption>
     </center>
 </figure>
 
 <figure id="fig1c">
     <center>
-        <img src="{{ site.url }}/images/programming/ArduinoChangePort.jpg" width="450" height="500" />
+        <img src="{{ site.baseurl }}/images/programming/ArduinoChangePort.jpg" width="450" height="500" />
         <figcaption>(c) Changing the port of the Arduino software.</figcaption>
     </center>
 </figure>
 
 <figure id="fig1d">
     <center>
-        <img src="{{ site.url }}/images/programming/ArduinoUpload.jpg" width="450" height="500" />
+        <img src="{{ site.baseurl }}/images/programming/ArduinoUpload.jpg" width="450" height="500" />
         <figcaption>(d) Uploading a script to Pheeno.</figcaption>
     </center>
 </figure>
@@ -182,7 +182,7 @@ This function returns the current heading in degrees from magnetic north in a ra
 
 <figure id="fig2">
     <center>
-        <img src="{{ site.url }}/images/programming/accelAxis.jpg" width="500" height="500" />
+        <img src="{{ site.baseurl }}/images/programming/accelAxis.jpg" width="500" height="500" />
     </center>
 </figure>
 ***Figure 2:*** *The axis of the IMU on Pheeno.*
@@ -244,7 +244,7 @@ Now that you have recorded the values open *ManualInputEEPROM.ino*. This script 
 
 <figure id="fig3">
     <center>
-        <img src="{{ site.url }}/images/programming/ManualCalibrationSerial.jpg" width="450" height="500" />
+        <img src="{{ site.baseurl }}/images/programming/ManualCalibrationSerial.jpg" width="450" height="500" />
     </center>
 </figure>
 ***Figure 3:*** *The serial output of the CalibrateIMU script.*
@@ -523,7 +523,7 @@ If you want to make sure the calibration information was stored correctly, open 
 
 <figure id="fig4">
     <center>
-        <img src="{{ site.url }}/images/programming/CalibrationData.jpg" width="500" height="500" />
+        <img src="{{ site.baseurl }}/images/programming/CalibrationData.jpg" width="500" height="500" />
     </center>
 </figure>
 ***Figure 4:*** *The serial output of the EEPROMReadCalibrateData.ino script.*

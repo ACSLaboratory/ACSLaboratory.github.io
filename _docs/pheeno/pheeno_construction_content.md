@@ -9,14 +9,14 @@ The "Pheeno" is a modular robot developed by the Autonomous Collectives Lab at A
 
 <figure id="fig1_1a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2547.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2547.jpg" width="400" height="400" />
         <figcaption>(a) View from the back.</figcaption>
     </center>
 </figure>
 
 <figure id="fig1_1b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2545.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2545.jpg" width="400" height="400" />
         <figcaption>(b) View from the top.</figcaption>
     </center>
 </figure>
@@ -29,21 +29,21 @@ The first and possibly most difficult stage of the Pheeno construction is the as
 
 <figure id="fig2_1a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2478.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2478.jpg" width="400" height="400" />
         <figcaption>(a) View from the top.</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_1b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2479.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2479.jpg" width="400" height="400" />
         <figcaption>(b) View from the bottom.</figcaption>
     </center>
 </figure>
 ***Figure 2.1:*** *Completed Printed Circuit Board.*
 
 <figure id="fig2_2">
-    <img src="{{ site.url }}/images/construction/Wiring_diagram.png" width="700" height="800" />
+    <img src="{{ site.baseurl }}/images/construction/Wiring_diagram.png" width="700" height="800" />
 </figure>
 ***Figure 2.2:*** *Wiring diagram for the PCB of Pheeno.*
 
@@ -54,14 +54,14 @@ Start with empty PCB board. Insert six mounts, which will hold the IR sensors, a
 
 <figure id="fig2_3a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2483.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2483.jpg" width="400" height="400" />
         <figcaption>(a) IR Mount Components</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_3b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2486.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2486.jpg" width="400" height="400" />
         <figcaption>(b) PCB with IR mounts inserted</figcaption>
     </center>
 </figure>
@@ -121,14 +121,14 @@ Next the capacitors should be soldered to the board. <font color="red">You shoul
 
 <figure id="fig2_4a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2493.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2493.jpg" width="400" height="400" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_4b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2494.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2494.jpg" width="400" height="400" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
@@ -143,7 +143,7 @@ A quick component to insert is the Op-Amp. It is the black chip on the lower sec
 
 <figure id="fig2_5">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2496.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2496.jpg" width="400" height="400" />
     </center>
 </figure>    
 ***Figure 2.5:*** *Layout of Molex connectors, male headers, and Op-Amp.*
@@ -153,21 +153,21 @@ The trickiest part of the PCB may be soldering the attachments of the three boar
 
 <figure id="fig2_6a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2511.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2511.jpg" width="300" height="300" />
         <figcaption>(a) Accelerometer/Compass</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_6b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2520.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2520.jpg" width="300" height="300" />
         <figcaption>(b) Motor Board (H-Bridge)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_6c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2501.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2501.jpg" width="300" height="300" />
         <figcaption>(c) Arduino Pro Mini</figcaption>
     </center>
 </figure>
@@ -175,7 +175,7 @@ The trickiest part of the PCB may be soldering the attachments of the three boar
 
 <figure id="fig2_7">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2518.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2518.jpg" width="400" height="400" />
     </center>
 </figure>
 ***Figure 2.7:*** *Layout of the accelerometer/compass, motor board, and Arduino Pro Mini.*
@@ -191,14 +191,14 @@ Next up are the three 60 V FET's (Field Effect Transistors) on the left. Orient 
 
 <figure id="fig2_8a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2524.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2524.jpg" width="400" height="400" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_8b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2536.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2536.jpg" width="400" height="400" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
@@ -212,14 +212,14 @@ We are close to finishing the PCB. Insert and solder two 6-pin Molex male connec
 
 <figure id="fig2_9a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2538.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2538.jpg" width="400" height="400" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_9b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2562.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2562.jpg" width="400" height="400" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
@@ -229,28 +229,28 @@ A power cable must be constructed. Figure [2.10](pheeno_construction_content#fig
 
 <figure id="fig2_10a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2551.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2551.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_10b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2555.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2555.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_10c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2556.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2556.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 
 <figure id="fig2_10d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2560.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2560.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
@@ -285,51 +285,51 @@ Repeat all of the steps above to make the second motor assembly.
 
 <figure id="fig3_1a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2573.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2573.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig3_1b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2576.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2576.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 
 <figure id="fig3_1c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2579.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2579.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 <figure id="fig3_1d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2580.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2580.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
 
 <figure id="fig3_1e">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2583.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2583.jpg" width="300" height="300" />
         <figcaption>(e)</figcaption>
     </center>
 </figure>
 <figure id="fig3_1f">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2811.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2811.jpg" width="300" height="300" />
         <figcaption>(f)</figcaption>
     </center>
 </figure>
 <figure id="fig3_1g">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2813.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2813.jpg" width="300" height="300" />
         <figcaption>(g)</figcaption>
     </center>
 </figure>
 <figure id="fig3_1h">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2584.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2584.jpg" width="300" height="300" />
         <figcaption>(h)</figcaption>
     </center>
 </figure>
@@ -342,13 +342,13 @@ Gather the other necessary components. Two caster assemblies are needed in addit
 
 <figure id="fig3_2a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2590.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2590.jpg" width="400" height="400" />
         <figcaption>(a) Parts of the drivetrain assembly.</figcaption>
     </center>
 </figure>
 <figure id="fig3_2b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2693.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2693.jpg" width="400" height="400" />
         <figcaption>(b) Assembled drivetrain.</figcaption>
     </center>
 </figure>
@@ -358,25 +358,25 @@ First, assemble the Pololu casters. The process can be seen in Figure [3.3](phee
 
 <figure id="fig3_3a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2592.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2592.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig3_3b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2594.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2594.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig3_3c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2595.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2595.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 <figure id="fig3_3d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2685.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2685.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
@@ -386,19 +386,19 @@ The motors will be mounted next. The parts required can be seen in Figure [3.4(a
 
 <figure id="fig3_4a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2687.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2687.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig3_4b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2691.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2691.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig3_4c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2693.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2693.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
@@ -413,19 +413,19 @@ As seen in Figures [3.5(b)](pheeno_construction_content#fig3_5b) and [3.5(c)](ph
 
 <figure id="fig3_5a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2697.jpg" width="250" height="250" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2697.jpg" width="250" height="250" />
         <figcaption>(a) Base Parts</figcaption>
     </center>
 </figure>
 <figure id="fig3_5b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2703.jpg" width="250" height="250" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2703.jpg" width="250" height="250" />
         <figcaption>(b) Bottom View</figcaption>
     </center>
 </figure>
 <figure id="fig3_5c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2704.jpg" width="250" height="250" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2704.jpg" width="250" height="250" />
         <figcaption>(c) Top View</figcaption>
     </center>
 </figure>
@@ -439,25 +439,25 @@ Take the PCB assembled in Section 2 and slide it into the Pheeno with the Arduin
 
 <figure id="fig4_1a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2706.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2706.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig4_1b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2705.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2705.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig4_1c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2707.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2707.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 <figure id="fig4_1d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2708.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2708.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
@@ -470,37 +470,37 @@ The assemble process is shown in Figure [4.2](pheeno_construction_content#fig4_2
 
 <figure id="fig4_2a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2713.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2713.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig4_2b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2749.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2749.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig4_2c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2752.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2752.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 <figure id="fig4_2d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2753.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2753.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
 <figure id="fig4_2e">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2714.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2714.jpg" width="300" height="300" />
         <figcaption>(e)</figcaption>
     </center>
 </figure>
 <figure id="fig4_2f">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2747.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2747.jpg" width="300" height="300" />
         <figcaption>(f)</figcaption>
     </center>
 </figure>
@@ -510,13 +510,13 @@ To attach the switch to Pheeno, refer to Figure [4.5](pheeno_construction_conten
 
 <figure id="fig4_3a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2718.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2718.jpg" width="400" height="400" />
         <figcaption>(a) Switch in column.</figcaption>
     </center>
 </figure>
 <figure id="fig4_3b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2720.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2720.jpg" width="400" height="400" />
         <figcaption>(b) Switch Wire Connection to PCB.</figcaption>
     </center>
 </figure>
@@ -533,49 +533,49 @@ Repeat the process for three more LED sub-assemblies.
 
 <figure id="fig4_4a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2723.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2723.jpg" width="300" height="300" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2734.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2734.jpg" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2737.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2737.jpg" width="300" height="300" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2739.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2739.jpg" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4e">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2740.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2740.jpg" width="300" height="300" />
         <figcaption>(e)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4f">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2741.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2741.jpg" width="300" height="300" />
         <figcaption>(f)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4g">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2743.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2743.jpg" width="300" height="300" />
         <figcaption>(g)</figcaption>
     </center>
 </figure>
 <figure id="fig4_4h">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2746.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2746.jpg" width="300" height="300" />
         <figcaption>(h)</figcaption>
     </center>
 </figure>
@@ -585,13 +585,13 @@ With these four LED's in hand (Figure [4.5(a)](pheeno_construction_content#fig4_
 
 <figure id="fig4_5a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2721.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2721.jpg" width="400" height="400" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig4_5b">
     <center>
-        <img src="{{ site.url }}/images/construction/LED_orientation.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/LED_orientation.jpg" width="400" height="400" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
@@ -602,13 +602,13 @@ The first step of Section 2, in constructing the PCB assembly, was to insert the
 
 <figure id="fig4_6a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2709.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2709.jpg" width="400" height="400" />
         <figcaption>(a) Top View.</figcaption>
     </center>
 </figure>
 <figure id="fig4_6b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2711.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2711.jpg" width="400" height="400" />
         <figcaption>(b) Front View.</figcaption>
     </center>
 </figure>
@@ -618,25 +618,25 @@ The last step for constructing the interior of the bot is to attach the FTDI boa
 
 <figure id="fig4_7a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2727.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2727.jpg" width="300" height="300" />
         <figcaption>(a) FTDI Board.</figcaption>
     </center>
 </figure>
 <figure id="fig4_7b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2729.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2729.jpg" width="300" height="300" />
         <figcaption>(b) USB Connection.</figcaption>
     </center>
 </figure>
 <figure id="fig4_7c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2730.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2730.jpg" width="300" height="300" />
         <figcaption>(c) Top View.</figcaption>
     </center>
 </figure>
 <figure id="fig4_7d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2732.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2732.jpg" width="300" height="300" />
         <figcaption>(d) Connection.</figcaption>
     </center>
 </figure>
@@ -652,25 +652,25 @@ The Raspberry Pi is a small, linux computer developed for educational purposes. 
 
 <figure id="fig5_1a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2754.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2754.jpg" width="300" height="300" />
         <figcaption>(a) Raspberry Pi.</figcaption>
     </center>
 </figure>
 <figure id="fig5_1b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2755.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2755.jpg" width="300" height="300" />
         <figcaption>(b) Parts.</figcaption>
     </center>
 </figure>
 <figure id="fig5_1c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2757.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2757.jpg" width="300" height="300" />
         <figcaption>(c) Top View.</figcaption>
     </center>
 </figure>
 <figure id="fig5_1d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2759.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2759.jpg" width="300" height="300" />
         <figcaption>(d) Side View.</figcaption>
     </center>
 </figure>
@@ -683,25 +683,25 @@ In order to power the computer, run cables from the PCB to the Pi. <font color="
 
 <figure id="fig5_2a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2763.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2763.jpg" width="300" height="300" />
         <figcaption>(a) Parts.</figcaption>
     </center>
 </figure>
 <figure id="fig5_2b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2764.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2764.jpg" width="300" height="300" />
         <figcaption>(b) USB to Pi.</figcaption>
     </center>
 </figure>
 <figure id="fig5_2c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2767.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2767.jpg" width="300" height="300" />
         <figcaption>(c) Pi Power Wires.</figcaption>
     </center>
 </figure>
 <figure id="fig5_2d">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2769.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2769.jpg" width="300" height="300" />
         <figcaption>(d) Top Attached.</figcaption>
     </center>
 </figure>
@@ -714,19 +714,19 @@ Hit the switch and the LEDs on the top right of the Raspberry Pi should start bl
 
 <figure id="fig5_3a">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2770.jpg" width="350" height="350" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2770.jpg" width="350" height="350" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
 <figure id="fig5_3b">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2772.jpg" width="350" height="350" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2772.jpg" width="350" height="350" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
 <figure id="fig5_3c">
     <center>
-        <img src="{{ site.url }}/images/construction/IMG_2773.jpg" width="350" height="350" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2773.jpg" width="350" height="350" />
         <figcaption>(c)</figcaption>
     </center>
 </figure>

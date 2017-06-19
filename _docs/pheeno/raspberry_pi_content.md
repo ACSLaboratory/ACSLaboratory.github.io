@@ -36,7 +36,7 @@ First let's physically install the camera board.*<font color="red">Make sure you
 
 <figure id="fig1">
     <center>
-        <img src="{{ site.url }}/images/raspberry_pi/installCamera.jpg" width="750" height="500" />
+        <img src="{{ site.baseurl }}/images/raspberry_pi/installCamera.jpg" width="750" height="500" />
     </center>
 </figure>
 ***Figure 1:*** *Raspberry Pi with camera board installed.*
@@ -62,7 +62,7 @@ $ raspivid -t 10000
 
 <figure id="fig2">
     <center>
-        <img src="{{ site.url }}/images/raspberry_pi/terminal.png" width="500" height="500" />
+        <img src="{{ site.baseurl }}/images/raspberry_pi/terminal.png" width="500" height="500" />
     </center>
 </figure>
 ***Figure 2:*** *Raspberry Pi graphical user interface with LXTerminal highlighted.*

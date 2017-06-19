@@ -49,7 +49,7 @@ To fit these parameters, the motors will be black box modeled using MATLAB's sys
 
 <figure id="FigMotorInputOutput">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorInputOutputTimePlot.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/MotorInputOutputTimePlot.jpg" width="600" height="600" />
        <figcaption><strong>Figure 1:</strong> The voltage input (top) and rotor velocity output (bottom) signals for a DC motor.</figcaption>
    </center>
 </figure>
@@ -70,14 +70,14 @@ The model compared to a set of validation data can be seen in [Figure 2](#FigMot
 
 <figure id="FigMotorModelValidationA">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorOutputModel.jpg" width="500" height="400" />
+       <img src="{{ site.baseurl }}/images/controls/MotorOutputModel.jpg" width="500" height="400" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigMotorModelValidationB">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorOutputModel2.jpg" width="500" height="400" />
+       <img src="{{ site.baseurl }}/images/controls/MotorOutputModel2.jpg" width="500" height="400" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -101,7 +101,7 @@ From this plant it is possible to design a controller so that the motor responds
 
 <figure id="FigFeedbackLoop">
    <center>
-       <img src="{{ site.url }}/images/controls/FeedbackLoop.png" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/FeedbackLoop.png" width="600" height="600" />
        <figcaption><strong>Figure 3:</strong> A block diagram representation of a standard negative feedback loop.</figcaption>
    </center>
 </figure>
@@ -118,14 +118,14 @@ First, notice the pre-filter is a stable low pass filter (presuming $a > 0$). Th
 
 <figure id="FigContRLocusA">
    <center>
-       <img src="{{ site.url }}/images/controls/Rlocus1.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/Rlocus1.jpg" width="600" height="600" />
        <figcaption>(a)</figcaption>
    </center>
 </figure>
 
 <figure id="FigContRLocusB">
    <center>
-       <img src="{{ site.url }}/images/controls/Rlocus2.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/Rlocus2.jpg" width="600" height="600" />
        <figcaption>(b)</figcaption>
    </center>
 </figure>
@@ -140,7 +140,7 @@ The gain, $g$, is chosen such that the rise time of the system is $<0.5$ s. [Fig
 
 <figure id="FigMotorSimStep">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorModelStepResponse.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/MotorModelStepResponse.jpg" width="600" height="600" />
        <figcaption><strong>Figure 5:</strong> The simulated step response of the designed continuous motor control loop.</figcaption>
    </center>
 </figure>
@@ -158,7 +158,7 @@ There are several ways to address this issue. In Pheeno, this issue is addressed
 
 <figure id="FigWindupPI">
    <center>
-       <img src="{{ site.url }}/images/controls/WindupPI.png" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/controls/WindupPI.png" width="500" height="500" />
        <figcaption><strong>Figure 6:</strong> Comparison of model to motor output for several reference commands.</figcaption>
    </center>
 </figure>
@@ -180,7 +180,7 @@ To validate this control, several known commands are given to two different moto
 
 <figure id="FigDiscretevsContinuousMotorModel">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorCDModelStepResponse.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/MotorCDModelStepResponse.jpg" width="600" height="600" />
        <figcaption><strong>Figure 7:</strong> Comparison of simulated step response of the designed continuous and discrete motor control loop. The (blue) line shows the discrete time step response and the (red) line shows the continuous step response.</figcaption>
    </center>
 </figure>
@@ -189,7 +189,7 @@ To validate this control, several known commands are given to two different moto
 
 <figure id="FigMotorValidation">
    <center>
-       <img src="{{ site.url }}/images/controls/MotorValidationTimePlot.jpg" width="600" height="600" />
+       <img src="{{ site.baseurl }}/images/controls/MotorValidationTimePlot.jpg" width="600" height="600" />
        <figcaption><strong>Figure 8:</strong> Comparison of model to motor output for several reference commands.</figcaption>
    </center>
 </figure>
@@ -205,7 +205,7 @@ Pheeno is by default a differential drive robot. This means each wheel can be co
 
 <figure id="FigPheenoControlReferenceFrame">
    <center>
-       <img src="{{ site.url }}/images/controls/PheenoReferenceFrame.png" width="500" height="500" />
+       <img src="{{ site.baseurl }}/images/controls/PheenoReferenceFrame.png" width="500" height="500" />
        <figcaption><strong>Figure 9:</strong> Representation of Pheeno in a Cartesian coordinate frame.</figcaption>
    </center>
 </figure>
