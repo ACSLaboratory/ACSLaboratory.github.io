@@ -1,12 +1,12 @@
 ---
-title: pheeno_ros ROS Package Guide
+title: pheeno_ros ROS Package Guide Part 1
 category: ROS
 order: 2
 ---
 
 ## Introduction
 
-The following guide will give a brief introduction to the use of the Robot Operating System with a single or multiple Pheenos.
+The following guides will give a brief introduction to the use of the Robot Operating System with a single or multiple Pheenos. Part 1 will give users an idea of how `rosserial_arduino` works with an example code we have created. Towards the end of the Arduino code tutorial, a quick guide to uploading your code to the Arduino/Teensy is provided.
 
 
 ## Arduino Code
@@ -48,16 +48,16 @@ int angular = 0;  // Turning (Right and Left) motion.
 
 
 // Create Publishers
-ros::Publisher pub_ir_center("/scan_center", &scan_center_msg);  // Center IR
-ros::Publisher pub_ir_back("/scan_back", &scan_back_msg);        // Back IR
-ros::Publisher pub_ir_right("/scan_right", &scan_right_msg);     // Right IR
-ros::Publisher pub_ir_left("/scan_left", &scan_left_msg);        // Left IR
-ros::Publisher pub_ir_cr("/scan_cr", &scan_cr_msg);          // Center Right IR
-ros::Publisher pub_ir_cl("/scan_cl", &scan_cl_msg);          // Center Left IR
-ros::Publisher pub_encoder_LL("/encoder_LL", &encoder_LL_msg);  // Encoder LL
-ros::Publisher pub_encoder_LR("/encoder_LR", &encoder_LR_msg);  // Encoder LR
-ros::Publisher pub_encoder_RL("/encoder_RL", &encoder_RL_msg);  // Encoder RL
-ros::Publisher pub_encoder_RR("/encoder_RR", &encoder_RR_msg);  // Encoder RR
+ros::Publisher pub_ir_center("/pheeno_55/scan_center", &scan_center_msg);  // Center IR
+ros::Publisher pub_ir_back("/pheeno_55/scan_back", &scan_back_msg);        // Back IR
+ros::Publisher pub_ir_right("/pheeno_55/scan_right", &scan_right_msg);     // Right IR
+ros::Publisher pub_ir_left("/pheeno_55/scan_left", &scan_left_msg);        // Left IR
+ros::Publisher pub_ir_cr("/pheeno_55/scan_cr", &scan_cr_msg);          // Center Right IR
+ros::Publisher pub_ir_cl("/pheeno_55/scan_cl", &scan_cl_msg);          // Center Left IR
+ros::Publisher pub_encoder_LL("/pheeno_55/encoder_LL", &encoder_LL_msg);  // Encoder LL
+ros::Publisher pub_encoder_LR("/pheeno_55/encoder_LR", &encoder_LR_msg);  // Encoder LR
+ros::Publisher pub_encoder_RL("/pheeno_55/encoder_RL", &encoder_RL_msg);  // Encoder RL
+ros::Publisher pub_encoder_RR("/pheeno_55/encoder_RR", &encoder_RR_msg);  // Encoder RR
 
 
 // Callback for cmd_vel Subscriber.
@@ -86,7 +86,7 @@ void callback(const geometry_msgs::Twist &msg) {
 
 
 // Create Subscribers
-ros::Subscriber<geometry_msgs::Twist> sub_cmd_vel("cmd_vel", callback);
+ros::Subscriber<geometry_msgs::Twist> sub_cmd_vel("/pheeno_55/cmd_vel", callback);
 
 
 void setup() {
@@ -155,10 +155,10 @@ void loop() {
 
   } else if (angular != 0) {
     if (angular > 0) {
-      PheenoTurnLeft(angular);
+      PheenoTurnRight(angular);
 
     } else {
-      PheenoTurnRight(angular);
+      PheenoTurnLeft(angular);
 
     }
 
@@ -177,8 +177,8 @@ void loop() {
 // Currently the appropriate use is just by providing a speed between 0-255,
 // without any error handling. Be careful!
 void PheenoTurnLeft(int speed) {
-  pheeno_robot.reverseRL(speed);
-  pheeno_robot.forwardLR(speed);
+  pheeno_robot.reverseLR(-1 * speed);
+  pheeno_robot.forwardRL(-1 * speed);
 
 }
 
@@ -187,8 +187,8 @@ void PheenoTurnLeft(int speed) {
 // Currently, the appropriate use is just by providing a speed between 0-255,
 // without any error handling. Be careful!
 void PheenoTurnRight(int speed) {
-  pheeno_robot.reverseLR(speed);
-  pheeno_robot.forwardRL(speed);
+  pheeno_robot.reverseRL(speed);
+  pheeno_robot.forwardLR(speed);
 
 }
 
@@ -288,16 +288,16 @@ We will talk more about the use of these variables later, but, for now, we defin
 
 ```cpp
 // Create Publishers
-ros::Publisher pub_ir_center("/scan_center", &scan_center_msg);
-ros::Publisher pub_ir_back("/scan_back", &scan_back_msg);
-ros::Publisher pub_ir_right("/scan_right", &scan_right_msg);
-ros::Publisher pub_ir_left("/scan_left", &scan_left_msg);
-ros::Publisher pub_ir_cr("/scan_cr", &scan_cr_msg);
-ros::Publisher pub_ir_cl("/scan_cl", &scan_cl_msg);
-ros::Publisher pub_encoder_LL("/encoder_LL", &encoder_LL_msg);
-ros::Publisher pub_encoder_LR("/encoder_LR", &encoder_LR_msg);
-ros::Publisher pub_encoder_RL("/encoder_RL", &encoder_RL_msg);
-ros::Publisher pub_encoder_RR("/encoder_RR", &encoder_RR_msg);
+ros::Publisher pub_ir_center("/pheeno_55/scan_center", &scan_center_msg);
+ros::Publisher pub_ir_back("/pheeno_55/scan_back", &scan_back_msg);
+ros::Publisher pub_ir_right("/pheeno_55/scan_right", &scan_right_msg);
+ros::Publisher pub_ir_left("/pheeno_55/scan_left", &scan_left_msg);
+ros::Publisher pub_ir_cr("/pheeno_55/scan_cr", &scan_cr_msg);
+ros::Publisher pub_ir_cl("/pheeno_55/scan_cl", &scan_cl_msg);
+ros::Publisher pub_encoder_LL("/pheeno_55/encoder_LL", &encoder_LL_msg);
+ros::Publisher pub_encoder_LR("/pheeno_55/encoder_LR", &encoder_LR_msg);
+ros::Publisher pub_encoder_RL("/pheeno_55/encoder_RL", &encoder_RL_msg);
+ros::Publisher pub_encoder_RR("/pheeno_55/encoder_RR", &encoder_RR_msg);
 ```
 
 
@@ -305,7 +305,7 @@ Here we define our Publishers. Each publisher takes in two arguments. The first 
 
 ```cpp
 // Create Subscribers
-ros::Subscriber<geometry_msgs::Twist> sub_cmd_vel("cmd_vel", callback);
+ros::Subscriber<geometry_msgs::Twist> sub_cmd_vel("/pheeno_55/cmd_vel", callback);
 ```
 
 
@@ -359,6 +359,14 @@ Angular works differently. Instead of forward and backward motion from the vecto
 
 Going back to the code, the callback function assigns the subscribed value from the `cmd_vel` topic message to the linear and angular values.
 
+
+#### Namespaces
+
+You may be asking "Why do we need to add a `pheeno_55` in front of our ROS topics?" Well, it helps to differentiate the ROS topics for one Pheeno and another one. Say for example, we have two Pheenos. If we sent a `Twist` message using the `/cmd_vel` topic to move *only* Pheeno \#1, both would actually move because both Subscribers receive messages from the `/cmd_vel` ROS Topic! This is because we never set a *namespace* for our device to differentiate the two Pheenos.
+
+If you followed the guide [here](../../pheeno/raspberry_pi_content#creating-a-static-ip-on-the-network) setting up your Pheeno, you will know that the Pheeno is given a network number, such as `192.168.119.55` by you. The first 3 sets of numbers are what a router uses to identify local connections, but the last number is used to identify *unique* devices. For example, if my phone is connected to the same router as the Pheeno, it may have the address `192.168.119.34` that is automatically (and randomly) assigned to it by the router. In our case, each Pheeno was given a *static* IP. This means that it won't be given a randomly assigned number when it connects to the router, but it will continue to use the one we gave it!
+
+When using multiple Pheenos, it is good practice to number the robot based on the IP number you gave it. For this code and the code available online, we use `55` as our numbered Pheeno. You can even do this with a single Pheeno too since you gave it a static IP upon setting the Raspberry Pi as well.
 
 
 ### Setup Function
@@ -451,10 +459,10 @@ After assigning the proper values from the hardware to the ROS Message variables
 
   } else if (angular != 0) {
     if (angular > 0) {
-      PheenoTurnLeft(angular);
+      PheenoTurnRight(angular);
 
     } else {
-      PheenoTurnRight(angular);
+      PheenoTurnLeft(angular);
 
     }
 
