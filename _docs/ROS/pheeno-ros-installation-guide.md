@@ -11,6 +11,9 @@ Currently, Pheeno is only supported by ROS Indigo; However, ROS Kinetic support 
 
 ## Installing ROS Indigo
 
+This information used to derive is from the official documentation located [here](http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Indigo%20on%20Raspberry%20Pi). If you would like some more information than what is provided in this guide, we ask that you refer to the official documentation.
+
+
 ### Setup ROS Repositories
 
 First, we would like to pull packages from the official ROS repository, so we must add ROS to our list of Ubuntu repositories.
@@ -69,6 +72,8 @@ $ wstool init src indigo-ros_comm-wet.rosinstall
 
 ### Installing Unavailable Dependencies
 
+Since not all dependencies are available in the debian (jessie) repos, we need to build some from source using `dpkg`. For just the `ros_comm` ROS installation we only need two, but we must first create a build directory.
+
 ```bash
 $ mkdir ~/ros_catkin_ws/external_src
 $ sudo apt-get install checkinstall cmake
@@ -76,12 +81,16 @@ $ sudo sh -c 'echo "deb-src http://mirrordirector.raspbian.org/raspbian/ testing
 $ sudo apt-get update
 ```
 
+Now that the build directory is created, we begin by installing `libconsole-bridge-dev` as such:
+
 ```bash
 $ cd ~/ros_catkin_ws/external_src
 $ sudo apt-get build-dep console-bridge
 $ apt-get source -b console-bridge
 $ sudo dpkg -i libconsole-bridge0.2*.deb libconsole-bridge-dev_*.deb
 ```
+
+The last dependency to install is `liblz4-dev`. The installation is shown below, but be warned that this package is known to take a long time to build and install.
 
 ```bash
 $ cd ~/ros_catkin_ws/external_src
@@ -92,6 +101,8 @@ $ sudo dpkg -i liblz4-\*.deb
 
 ### Resolving Dependencies with rosdep
 
+The remaining dependencies can just be installed with `rosdep` as such:
+
 ```bash
 $ cd ~/ros_catkin_ws
 $ rosdep install --from-paths src --ignore-src --rosdistro indigo -y -r --os=debian:jessie
@@ -100,19 +111,25 @@ $ rosdep install --from-paths src --ignore-src --rosdistro indigo -y -r --os=deb
 
 ### Building the catkin Workspace
 
+Once all our dependencies are resolved, we can finally install ROS on our Pi as shown below. I do want users of this guide to note the use of `-j2` at the end of future code snippits. This flag tells the compiler to use two cores instead of the default four. From my experience, not putting this flag resulted in the Pi overheating and the OS freezing. Therefore, our guide will continue using the flag at the end of installation directions to prevent future crashes.
+
 ```bash
 $ sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/indigo -j2
 ```
+
+After the installation completes, we can source the installation as such:
 
 ```bash
 $ source /opt/ros/indigo/setup.bash
 ```
 
+But to make it permanent, you should use this!
+
 ```bash
 $ echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 ```
 
-Thats it!
+Congratulations! ROS Indigo is now installed on your Pi!
 
 
 ## Installing Other Necessary Packages

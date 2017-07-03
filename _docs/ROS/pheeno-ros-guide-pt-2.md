@@ -1,5 +1,5 @@
 ---
-title: pheeno_ros ROS Package Guide Part 2
+title: pheeno_ros ROS Package Guide Pt. 2
 category: ROS
 order: 3
 use_math: true
