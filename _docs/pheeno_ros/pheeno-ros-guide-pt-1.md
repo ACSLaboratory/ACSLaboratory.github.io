@@ -1,6 +1,6 @@
 ---
-title: pheeno_ros ROS Package Guide Pt. 1
-category: ROS
+title: Package Guide Pt. 1
+category: pheeno_ros
 order: 2
 ---
 

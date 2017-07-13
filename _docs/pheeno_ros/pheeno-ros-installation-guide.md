@@ -1,6 +1,6 @@
 ---
 title: ROS Installation for Pheeno
-category: ROS
+category: pheeno_ros
 order: 1
 ---
 

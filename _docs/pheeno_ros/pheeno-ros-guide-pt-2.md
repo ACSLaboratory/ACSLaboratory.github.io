@@ -1,6 +1,6 @@
 ---
-title: pheeno_ros ROS Package Guide Pt. 2
-category: ROS
+title: Package Guide Pt. 2
+category: pheeno_ros
 order: 3
 use_math: true
 ---
@@ -69,7 +69,7 @@ def obstacle_check(msg, ir_location):
 if __name__ == "__main__":
     # Get arguments from argument parser.
     input_args = get_args()
-    if input_args is "":
+    if input_args.name is "":
         pheeno_number = ""
 
     else:
