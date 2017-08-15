@@ -132,4 +132,4 @@ $ echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 
 **Congratulations!** ROS Indigo is now installed on your Pi!
 
-Next, we need to install some other packages for the `pheeno_ros` package to work. Directions to do so are found [here](other-necessary-ros-packages#getting-started).
+Next, we need to install some other packages for the `pheeno_ros` package to work. Directions to do so are found [here]({{ site.baseurl }}/ros/other-necessary-ros-packages#getting-started).

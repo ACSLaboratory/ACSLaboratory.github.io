@@ -12,7 +12,7 @@ The following guide will show you how to install ROS Kinetic LTS (Long-Term Supp
 
 ## Installing ROS Kinetic on Ubuntu Mate
 
-The guide [here](http://wiki.ros.org/kinetic/Installation/Ubuntu) provides the details for installation on any Ubuntu system. That is how easy it is if you use Ubuntu Mate! One suggestion we would like to make is that you only install the *ROS-Base* (`ros-kinetic-ros-base`) and **NOT** the *Desktop-Full Install* (`ros-kinetic-desktop-full` or `ros-kinetic-desktop`). The Raspberry Pi is not powerful enough to run many of the GUI tools provided in the desktop installations (and it is a waste of space). Once you are done installing ROS Kinetic, skip to the [Installing Other Necessary Packages](other-necessary-ros-packages#getting-started) section.
+The guide [here](http://wiki.ros.org/kinetic/Installation/Ubuntu) provides the details for installation on any Ubuntu system. That is how easy it is if you use Ubuntu Mate! One suggestion we would like to make is that you only install the *ROS-Base* (`ros-kinetic-ros-base`) and **NOT** the *Desktop-Full Install* (`ros-kinetic-desktop-full` or `ros-kinetic-desktop`). The Raspberry Pi is not powerful enough to run many of the GUI tools provided in the desktop installations (and it is a waste of space). Once you are done installing ROS Kinetic, skip to the [Installing Other Necessary Packages]({{ site.baseurl }}/ros/other-necessary-ros-packages#getting-started) section.
 
 ## Installing ROS Kinetic on Raspbian Jessie
 
@@ -114,4 +114,4 @@ $ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
 **Congratulations!** ROS Kinetic is now installed on your Pi!
 
-Next, we need to install some other packages for the `pheeno_ros` package to work. Directions to do so are found [here](other-necessary-ros-packages#getting-started).
+Next, we need to install some other packages for the `pheeno_ros` package to work. Directions to do so are found [here]({{ site.baseurl }}/ros/other-necessary-ros-packages#getting-started).
