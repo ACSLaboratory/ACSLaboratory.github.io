@@ -1,7 +1,7 @@
 ---
 title: RaspiCam on Pheeno
 category: pheeno_ros
-order: 5
+order: 4
 ---
 
 ## Introduction

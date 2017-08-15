@@ -1,7 +1,7 @@
 ---
 title: Package Guide Pt. 2
 category: pheeno_ros
-order: 3
+order: 2
 use_math: true
 ---
 

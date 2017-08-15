@@ -1,7 +1,7 @@
 ---
 title: Package Guide Pt. 1
 category: pheeno_ros
-order: 2
+order: 1
 ---
 
 ## Introduction
