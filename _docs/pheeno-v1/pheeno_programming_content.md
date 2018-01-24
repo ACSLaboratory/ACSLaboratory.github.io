@@ -1,6 +1,6 @@
 ---
 title: Beginning to Program Pheeno
-category: Pheeno
+category: Pheeno V1
 order: 4
 ---
 <!-- The Prettify Code -->

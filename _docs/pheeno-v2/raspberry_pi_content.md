@@ -1,7 +1,7 @@
 ---
 title: Setting Up Raspberry Pi with Camera for Pheeno
-category: Pheeno
-order: 2
+category: Pheeno V2
+order: 3
 ---
 
 ## Unboxing, Formatting, and Installing the Operating System for the Pi

@@ -1,6 +1,6 @@
 ---
 title: Pheeno Construction Guide
-category: Pheeno
+category: Pheeno V1
 order: 1
 ---
 

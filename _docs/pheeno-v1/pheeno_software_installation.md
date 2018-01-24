@@ -1,6 +1,6 @@
 ---
 title: Pheeno Software Installation
-category: Pheeno
+category: Pheeno V1
 order: 3
 ---
 
