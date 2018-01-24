@@ -4,6 +4,8 @@ category: Other
 order: 1
 ---
 
+> **NOTE:** This page is under construction.
+
 ## Introduction
 
 [Git](https://git-scm.com/) is a powerful, FOSS version control software that has become a necessity for any open source project or company. It allows for workflows where multiple users work together on a code base with ease. The point of version control is to have...well...*control* over revision or changes to the code. This may seem esoteric at first, but it is actually really useful. This guide will provide a simple introduction for research labs to learn how to use git in their research environments.

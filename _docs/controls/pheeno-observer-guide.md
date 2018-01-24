@@ -5,6 +5,8 @@ order: 2
 use_math: true
 ---
 
+## Introduction
+
 This document is meant to help new robotics users and specifically users of the Pheeno robotic platform get used to onboard sensing typically used as feedback in control theory. Typically when learning the theory behind controllers the feedback term is assumed to be perfect and known. In reality, these feedbacks are based on sensor measurements that must be calibrated properly with limitations that should be known. There are many different types of sensors with large ranges of precision and cost. Here, the focus will be put on the sensors onboard the Pheeno platform and fusing their measurements to produce reliable feedback.
 
 [Getting to Know the Onboard Sensors](#getting-to-know-the-onboard-sensors) will provide a high level introduction to the sensors on board the Pheeno robotic platform, their strengths and weaknesses, and how they should be used. The [Calibration](#calibration) section will go into how and why to calibrate sensors on board the robot. The [Sensor Fusion for State Feedback](#sensor-fusion-for-state-feedback) section will introduce different methods to combine sensor measurements into reliable, robust position and orientation estimates for the robot. It will also briefly go into the pros and cons of each fusion.
