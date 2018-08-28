@@ -601,20 +601,20 @@ Further analysis of [Figure 15](#FigCFEstimatesA) gives a good idea of how this 
 
 
 ## References
-[1] Eitel E. Basics of Rotary Encoders: Overview and New Technolo- gies; 2014. Accessed: 2017-03-01. http://machinedesign.com/sensors/ basics-rotary-encoders-overview-and-new-technologies-0.
+[1] Eitel E. *Basics of Rotary Encoders: Overview and New Technologies*; 2014. Accessed: 2017-03-01. [http://machinedesign.com/sensors/basics-rotary-encoders-overview-and-new-technologies-0](http://machinedesign.com/sensors/ basics-rotary-encoders-overview-and-new-technologies-0).
 
 |
 
-[2] Ozyagcilar T. Calibrating an eCompass in the Presence of Hard- and Soft-Iron Interfer- ence; 2015. Accessed: 2017-03-01. http://cache.freescale.com/files/sensors/doc/app note/ AN4246.pdf.
+[2] Ozyagcilar T. *Calibrating an eCompass in the Presence of Hard- and Soft-Iron Interference*; 2015. Accessed: 2017-03-01. [https://www.nxp.com/files-static/sensors/doc/app_note/AN4246.pdf](https://www.nxp.com/files-static/sensors/doc/app_note/AN4246.pdf).
 
 |
 
-[3] Yoo TS, Hong SK, Yoon HM, Park S. Gain-scheduled complementary filter design for a MEMS based attitude and heading reference system. Sensors. 2011;11(4):3816–3830.
+[3] Yoo TS, Hong SK, Yoon HM, Park S. *Gain-scheduled complementary filter design for a MEMS based attitude and heading reference system*. Sensors. 2011;11(4):3816–3830.
 
 |
 
-[4] Madgwick SOH, Harrison AJL, Vaidyanathan R. Estimation of IMU and MARG orientation using a gradient descent algorithm. In: 2011 IEEE International Conference on Rehabilita- tion Robotics; 2011. p. 1–7.
+[4] Madgwick SOH, Harrison AJL, Vaidyanathan R. *Estimation of IMU and MARG orientation using a gradient descent algorithm*. In: 2011 IEEE International Conference on Rehabilita- tion Robotics; 2011. p. 1–7.
 
 |
 
-[5] Mahony R, Hamel T, Pflimlin JM. Nonlinear Complementary Filters on the Special Or- thogonal Group. IEEE Transactions on Automatic Control. 2008 June;53(5):1203–1218.
+[5] Mahony R, Hamel T, Pflimlin JM. *Nonlinear Complementary Filters on the Special Orthogonal Group*. IEEE Transactions on Automatic Control. 2008 June;53(5):1203–1218.

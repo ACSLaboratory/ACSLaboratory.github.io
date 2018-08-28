@@ -360,24 +360,24 @@ which limits the maximum linear velocity of the robot to a designed $v_0$ . When
 
 # References
 
-[1] Iman Anvari. Non-holonomic differential drive mobile robot control & design: Critical dynamics and coupling constraints, 2013.
+[1] Iman Anvari. *Non-holonomic differential drive mobile robot control & design: Critical dynamics and coupling constraints*, 2013.
 
 |
 
-[2] C Bohn and DP Atherton. A simulink package for comparative studies of pid anti-windup strategies. In Computer-Aided Control System Design, 1994. Proceedings., IEEE/IFAC Joint Symposium on, pages 447–452. IEEE, 1994.
+[2] C Bohn and DP Atherton. *A SIMULINK package for comparative studies of PID anti-windup strategies*. In Computer-Aided Control System Design, 1994. Proceedings., IEEE/IFAC Joint Symposium on, pages 447–452. IEEE, 1994.
 
 |
 
-[3] George EP Box. Robustness in the strategy of scientific model building. Robustness in statistics, 1:201–236, 1979.
+[3] George EP Box. *Robustness in the strategy of scientific model building*. Robustness in Statistics, 1:201–236, 1979.
 
 |
 
-[4] Evgeni Kiriy and Martin Buehler. Three-state extended kalman filter for mobile robot localization. McGill University., Montreal, Canada, Tech. Rep. TR-CIM, 5:23, 2002.
+[4] Evgeni Kiriy and Martin Buehler. *Three-state extended kalman filter for mobile robot localization*. McGill University., Montreal, Canada, Tech. Rep. TR-CIM, 5:23, 2002.
 
 |
 
-[5] Lennart Ljung. System identification toolboxT M , 2017. URL https://www.mathworks.com/ help/pdf doc/ident/ident.pdf. Accessed: 2017-03-07.
+[5] Lennart Ljung. *System Identification Toolbox* (Trademark) , 2017. URL [https://www.mathworks.com/help/pdf_doc/ident/ident.pdf](https://www.mathworks.com/help/pdf_doc/ident/ident.pdf). Accessed: 2017-03-07.
 
 |
 
-[6] Kumar Malu and Sandeep Jharna Majumdar. Kinematics, localization and control of differential drive mobile robot. Global Journal of Research In Engineering, 14(1), 2014.
+[6] Kumar Malu and Sandeep Jharna Majumdar. *Kinematics, localization and control of differential drive mobile robot*. Global Journal of Research in Engineering, 14(1), 2014.
