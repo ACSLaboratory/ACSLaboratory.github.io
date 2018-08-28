@@ -48,10 +48,10 @@ To fit these parameters, the motors will be black box modeled using MATLAB's sys
 |
 
 <figure id="FigMotorInputOutput">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorInputOutputTimePlot.jpg" width="600" height="600" />
-       <figcaption><strong>Figure 1:</strong> The voltage input (top) and rotor velocity output (bottom) signals for a DC motor.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorInputOutputTimePlot.jpg" width="600" height="600" />
+        <figcaption><strong>Figure 1:</strong> The voltage input (top) and rotor velocity output (bottom) signals for a DC motor.</figcaption>
+    </center>
 </figure>
 
 |
@@ -69,17 +69,17 @@ The model compared to a set of validation data can be seen in [Figure 2](#FigMot
 |
 
 <figure id="FigMotorModelValidationA">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorOutputModel.jpg" width="500" height="400" />
-       <figcaption>(a)</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorOutputModel.jpg" width="500" height="400" />
+        <figcaption>(a)</figcaption>
+    </center>
 </figure>
 
 <figure id="FigMotorModelValidationB">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorOutputModel2.jpg" width="500" height="400" />
-       <figcaption>(b)</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorOutputModel2.jpg" width="500" height="400" />
+        <figcaption>(b)</figcaption>
+    </center>
 </figure>
 
 **Figure 2:** The first order DC motor model (red) compared to validation data (black)
@@ -100,10 +100,10 @@ From this plant it is possible to design a controller so that the motor responds
 |
 
 <figure id="FigFeedbackLoop">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/FeedbackLoop.png" width="600" height="600" />
-       <figcaption><strong>Figure 3:</strong> A block diagram representation of a standard negative feedback loop.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/FeedbackLoop.png" width="600" height="600" />
+        <figcaption><strong>Figure 3:</strong> A block diagram representation of a standard negative feedback loop.</figcaption>
+    </center>
 </figure>
 
 |
@@ -117,17 +117,17 @@ First, notice the pre-filter is a stable low pass filter (presuming $a > 0$). Th
 |
 
 <figure id="FigContRLocusA">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/Rlocus1.jpg" width="600" height="600" />
-       <figcaption>(a)</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/Rlocus1.jpg" width="600" height="600" />
+        <figcaption>(a)</figcaption>
+    </center>
 </figure>
 
 <figure id="FigContRLocusB">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/Rlocus2.jpg" width="600" height="600" />
-       <figcaption>(b)</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/Rlocus2.jpg" width="600" height="600" />
+        <figcaption>(b)</figcaption>
+    </center>
 </figure>
 
 **Figure 4:** The root locus of Pheeno's motors where the zero of the controller is chosen larger *(top)* and smaller *(bottom)* than the modeled pole of the motor.
@@ -139,10 +139,10 @@ The gain, $g$, is chosen such that the rise time of the system is $<0.5$ s. [Fig
 |
 
 <figure id="FigMotorSimStep">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorModelStepResponse.jpg" width="600" height="600" />
-       <figcaption><strong>Figure 5:</strong> The simulated step response of the designed continuous motor control loop.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorModelStepResponse.jpg" width="600" height="600" />
+        <figcaption><strong>Figure 5:</strong> The simulated step response of the designed continuous motor control loop.</figcaption>
+    </center>
 </figure>
 
 |
@@ -157,10 +157,10 @@ There are several ways to address this issue. In Pheeno, this issue is addressed
 |
 
 <figure id="FigWindupPI">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/WindupPI.png" width="500" height="500" />
-       <figcaption><strong>Figure 6:</strong> Comparison of model to motor output for several reference commands.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/WindupPI.png" width="500" height="500" />
+        <figcaption><strong>Figure 6:</strong> Comparison of model to motor output for several reference commands.</figcaption>
+    </center>
 </figure>
 
 |
@@ -179,19 +179,19 @@ To validate this control, several known commands are given to two different moto
 |
 
 <figure id="FigDiscretevsContinuousMotorModel">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorCDModelStepResponse.jpg" width="600" height="600" />
-       <figcaption><strong>Figure 7:</strong> Comparison of simulated step response of the designed continuous and discrete motor control loop. The (blue) line shows the discrete time step response and the (red) line shows the continuous step response.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorCDModelStepResponse.jpg" width="600" height="600" />
+        <figcaption><strong>Figure 7:</strong> Comparison of simulated step response of the designed continuous and discrete motor control loop. The (blue) line shows the discrete time step response and the (red) line shows the continuous step response.</figcaption>
+    </center>
 </figure>
 
 |
 
 <figure id="FigMotorValidation">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/MotorValidationTimePlot.jpg" width="600" height="600" />
-       <figcaption><strong>Figure 8:</strong> Comparison of model to motor output for several reference commands.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/MotorValidationTimePlot.jpg" width="600" height="600" />
+        <figcaption><strong>Figure 8:</strong> Comparison of model to motor output for several reference commands.</figcaption>
+    </center>
 </figure>
 
 |
@@ -204,100 +204,126 @@ Pheeno is by default a differential drive robot. This means each wheel can be co
 |
 
 <figure id="FigPheenoControlReferenceFrame">
-   <center>
-       <img src="{{ site.baseurl }}/images/controls/PheenoReferenceFrame.png" width="500" height="500" />
-       <figcaption><strong>Figure 9:</strong> Representation of Pheeno in a Cartesian coordinate frame.</figcaption>
-   </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/controls/PheenoReferenceFrame.png" width="500" height="500" />
+        <figcaption><strong>Figure 9:</strong> Representation of Pheeno in a Cartesian coordinate frame.</figcaption>
+    </center>
 </figure>
 
 |
 
 Consider Pheeno in an inertial reference frame $\{X_o, Y_o\}$ as shown in [Figure 9](#FigPheenoControlReferenceFrame). Pheeno's basic motion model is, what is commonly referred to as, the unicycle model.
 
-:label: UnicycleWV
-$$
-    \begin{bmatrix}
-    \dot{x} \\ \dot{y} \\ \dot{\theta}
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    \cos{\theta} & 0 \\
-    \sin{\theta} & 0 \\
-    0 & 1
-    \end{bmatrix}
-    \begin{bmatrix}
-    v \\ w
-    \end{bmatrix}  
-$$
+
+<figure id="EqUnicycleWV">
+    <body>
+        $$
+            \begin{bmatrix}
+            \dot{x} \\ \dot{y} \\ \dot{\theta}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            \cos{\theta} & 0 \\
+            \sin{\theta} & 0 \\
+            0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+            v \\ w
+            \end{bmatrix}  
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 1)</strong> The Unicycle Model</figcaption>
+    </center>
+</figure>
 
 
 This model transforms the robot's linear velocity, $v$ , and rotational velocity, $w$ , in Pheeno's reference frame to velocity states in the inertial frame. However, the robot's linear and rotational velocity cannot be controlled directly so another transformation is needed linking the rotational velocity of the wheels, $v_R$ and $v_L$ , to $v$ and $w$ . This relation is derived more thoroughly in [\[6\]](#references).
 
-:label: UnicycleConversion
-$$
-    \begin{bmatrix}
-    v_R \\ v_L
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    \frac{1}{r} & \frac{L}{2r} \\
-    \frac{1}{r} & \frac{-L}{2r}
-    \end{bmatrix}
-    \begin{bmatrix}
-    v \\ w
-    \end{bmatrix}
-$$
+
+<figure id="EqUnicycleConversion">
+    <body>
+        $$
+            \begin{bmatrix}
+            v_R \\ v_L
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            \frac{1}{r} & \frac{L}{2r} \\
+            \frac{1}{r} & \frac{-L}{2r}
+            \end{bmatrix}
+            \begin{bmatrix}
+            v \\ w
+            \end{bmatrix}
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 2)</strong> Unicycle Model Conversion</figcaption>
+    </center>
+</figure>
 
 
-Here, $r$ is the wheel radius and $L$ is the axle length of the differential drive robot. Combining \autoref{eq:UnicycleWV} and \autoref{eq:UnicycleConversion}, yields the final relation between the wheel speeds of the robot and the velocity states in the inertial reference frame.
+Here, $r$ is the wheel radius and $L$ is the axle length of the differential drive robot. Combining [Equation 1](#EqUnicycleWV) and [Equation 2](#EqUnicycleConversion), yields the final relation between the wheel speeds of the robot and the velocity states in the inertial reference frame.
 
 
-:label: UnicycleRL
-$$
-    \begin{bmatrix}
-    \dot{x} \\ \dot{y} \\ \dot{\theta}
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-    \frac{r}{2}\cos{\theta} & \frac{r}{2}\cos{\theta} \\
-    \frac{r}{2}\sin{\theta} & \frac{r}{2}\sin{\theta} \\
-    \frac{r}{L} & \frac{-r}{L}
-    \end{bmatrix}
-    \begin{bmatrix}
-    v_R \\ v_L
-    \end{bmatrix}
-$$
+<figure id="EqUnicycleRL">
+    <body>
+        $$
+            \begin{bmatrix}
+            \dot{x} \\ \dot{y} \\ \dot{\theta}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+            \frac{r}{2}\cos{\theta} & \frac{r}{2}\cos{\theta} \\
+            \frac{r}{2}\sin{\theta} & \frac{r}{2}\sin{\theta} \\
+            \frac{r}{L} & \frac{-r}{L}
+            \end{bmatrix}
+            \begin{bmatrix}
+            v_R \\ v_L
+            \end{bmatrix}
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 3)</strong> Individual Motor Unicycle Model</figcaption>
+    </center>
+</figure>
 
 
-However, it is much more intuitive to use the unicycle model (\autoref{eq:UnicycleWV}) thus control will be done to create reference linear velocities, $v$ , and rotational velocities, $w$ , for the robot to follow. These will then be transformed to motor velocity commands using \autoref{eq:UnicycleConversion}.
+However, it is much more intuitive to use the unicycle model ([Eq. 1](#EqUnicycleWV)) thus control will be done to create reference linear velocities, $v$ , and rotational velocities, $w$ , for the robot to follow. These will then be transformed to motor velocity commands using [Equation 2](#EqUnicycleConversion).
 
 In discrete time, this unicycle model takes the form,
 
 
-:label: DUnicycleWV
-$$
-    \begin{bmatrix}
-    x \\ y \\ \theta
-    \end{bmatrix}_{k+1}
-    =
-    \begin{bmatrix}
-    1 & 0 &0\\
-    0 & 1 & 0 \\
-    0 & 0 & 1
-    \end{bmatrix}
-    \begin{bmatrix}
-    x \\ y \\ \theta
-    \end{bmatrix}_k
-    +
-    \begin{bmatrix}
-    \Delta t \cos({\theta_k + \frac{\Delta\theta_k}{2}}) & 0 \\
-    \Delta t \sin({\theta_k + \frac{\Delta\theta_k}{2}}) & 0 \\
-    0 & \Delta t
-    \end{bmatrix}
-    \begin{bmatrix}
-    v \\ w
-    \end{bmatrix}
-$$
+<figure id="EqDUnicycleWV">
+    <body>
+        $$
+            \begin{bmatrix}
+            x \\ y \\ \theta
+            \end{bmatrix}_{k+1}
+            =
+            \begin{bmatrix}
+            1 & 0 &0\\
+            0 & 1 & 0 \\
+            0 & 0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+            x \\ y \\ \theta
+            \end{bmatrix}_k
+            +
+            \begin{bmatrix}
+            \Delta t \cos({\theta_k + \frac{\Delta\theta_k}{2}}) & 0 \\
+            \Delta t \sin({\theta_k + \frac{\Delta\theta_k}{2}}) & 0 \\
+            0 & \Delta t
+            \end{bmatrix}
+            \begin{bmatrix}
+            v \\ w
+            \end{bmatrix}
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 4)</strong> Discrete-time Unicycle Model</figcaption>
+    </center>
+</figure>
 
 
 This unicycle model has slight changes to the orientation model that can be found in a paper by [\[4\]](#references). Using this model over the usual one showed vast improvements in dead reckoning navigation for Pheeno.
