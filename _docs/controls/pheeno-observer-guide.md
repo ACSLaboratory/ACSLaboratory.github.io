@@ -227,10 +227,18 @@ From the AWGN assumption, the bias in each direction is the average acceleration
 
 With a bit more mathematical rigor, Pheeno's IMU oriented in Earth's gravitational field $\vec{g}$ undergoing a linear acceleration $\vec{a_e}$ in the earth's reference frame will produce a reading $\vec{M}$ of,
 
-:label: AccEq
-$$
-    \vec{M} = \textbf{R}(\vec{a_e}+\vec{g})
-$$
+
+<figure id="EqAccEq">
+    <body>
+        $$
+            \vec{M} = \textbf{R}(\vec{a_e}+\vec{g})
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 1)</strong> Acceleration</figcaption>
+    </center>
+</figure>
+
 
 where $\textbf{R}$ is the rotation matrix that relates the IMU's reference frame to the Earth's. Since we are dealing with orientation data where the robot is at rest on a surface parallel to the Earth's surface, the z-axis of the robot's reference frame is aligned with the z-axis of the reference frame of the Earth, this equation simplifies to,
 
@@ -276,20 +284,27 @@ $$
 $$
 
 
-Using this matrix in \autoref{eq:AccEq} with $\vec{g} = [0 \hspace{0.1cm} 0 \hspace{0.1cm} -1]^T$ yields,
+Using this matrix in [Equation 1](#EqAccEq) with $\vec{g} = [0 \hspace{0.1cm} 0 \hspace{0.1cm} -1]^T$ yields,
 
 
-:label: RollPitchEq
-$$
-    \vec{M} =
-    \begin{bmatrix}
-    \sin(\phi)\\
-    -\cos(\phi)\sin(\theta)\\
-    -\cos(\phi)\cos(\theta)
-    \end{bmatrix}
-$$
+<figure id="EqRollPitchEq">
+    <body>
+        $$
+            \vec{M} =
+            \begin{bmatrix}
+            \sin(\phi)\\
+            -\cos(\phi)\sin(\theta)\\
+            -\cos(\phi)\cos(\theta)
+            \end{bmatrix}
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 2)</strong> Roll-Pitch Equation</figcaption>
+    </center>
+</figure>
 
-which is only dependent on the pitch, $\theta$, and roll, $\phi$, angles. Using the average measurement vector, it is possible to solve \autoref{eq:RollPitchEq}. It should be noted that the vector on the right side of \autoref{eq:RollPitchEq} always has a length of $1$, thus $\vec{M} = [M_x \hspace{0.1cm} M_y \hspace{0.1cm} M_z]^T$ should be normalized. Solving \autoref{eq:RollPitchEq} for the pitch and roll angles yields,
+
+which is only dependent on the pitch, $\theta$, and roll, $\phi$, angles. Using the average measurement vector, it is possible to solve [Equation 2](#EqRollPitchEq). It should be noted that the vector on the right side of [Equation 2](#EqRollPitchEq) always has a length of $1$, thus $\vec{M} = [M_x \hspace{0.1cm} M_y \hspace{0.1cm} M_z]^T$ should be normalized. Solving [Equation 2](#EqRollPitchEq) for the pitch and roll angles yields,
 
 $$
     \begin{align}
@@ -300,7 +315,7 @@ $$
 
 Note that the pitch angle has two negatives that could be canceled. These are left in purposefully so that when solving for the angle and using and `atan2()` function the user does not get the wrong angle.
 
-Now to determine the yaw angle offset, Pheeno is pitched at a known angle like in [Figure 12(b)](#FigRollPitchYawCartoon).  The new measured gravity vector should now be $g = [0 \hspace{0.1cm} -\sin(\theta_d) \hspace{0.1cm} -\cos(\theta_d)]$ where $\theta_d$ is the known inclination of the robot. Substituting this into \autoref{eq:AccEq} yields,
+Now to determine the yaw angle offset, Pheeno is pitched at a known angle like in [Figure 12(b)](#FigRollPitchYawCartoon).  The new measured gravity vector should now be $g = [0 \hspace{0.1cm} -\sin(\theta_d) \hspace{0.1cm} -\cos(\theta_d)]$ where $\theta_d$ is the known inclination of the robot. Substituting this into [Equation 1](#EqAccEq) yields,
 
 $$
 	\frac{\vec{M_p}}{\lVert M_p \rVert} = \boldsymbol{R_z}(\psi) \boldsymbol{R_x}(\theta_{xyz})\boldsymbol{R_y}(\phi_{xyz})\vec{g}
@@ -477,14 +492,21 @@ Complementary filters are very similar to *proportional, integral, derivative* c
 These filters work by using *high pass* and *low pass* filters simultaneously. High pass filters allow high frequency signals while suppressing low frequency signals (such as drift of the gyroscope). Low pass filters act the opposite way by allowing low frequency signals while suppressing high frequency contents (like vibrational noise picked up by the accelerometer). In its most simple form, a first order complementary filter takes the form,
 
 
-:label: CFBasic
-$$
-    m_{filter} = a \hspace{0.5mm} m_{fast} + (1-a) m_{slow}
-$$
+<figure id="EqCFBasic">
+    <body>
+        $$
+            m_{filter} = a \hspace{0.5mm} m_{fast} + (1-a) m_{slow}
+        $$
+    </body>
+    <center>
+        <figcaption><strong>Eq. 3)</strong> First-order Complementary Filter</figcaption>
+    </center>
+</figure>
+
 
 where, $m_{filter}$ is the filtered measurement, $m_{fast}$ is the measurement that is accurate over short timescales, $m_{slow}$ is the measurement that is accurate over long timescales, and $a \in (0, 1)$ is the filter gain that is to be chosen.
 
-Choosing $a$ properly requires a bit of mathematics to fully understand but can be chosen and tweaked based on some intuition as well. \autoref{eq:CFBasic} can be looked at naively as an average. Two measurements are being averaged based on the users confidence in them during short time periods. The higher $a$ is chosen, the more the filtered measurement will rely on the fast measurement and will take longer to return to the slow measurement (which will be true when the aggressive maneuver has ended). The lower $a$ is chosen, the more the filtered measurement will rely on the slow measurement and will be more prone to short term noise. While this is not how these filters were formulated (the idea behind them was not averaging in this sense), it is good intuition to design these filters. The optimal choice for $a$ in a scenario will result in a filtered measurement that is able to capture very fast changes in the measurements as well as not have that measurement drift.
+Choosing $a$ properly requires a bit of mathematics to fully understand but can be chosen and tweaked based on some intuition as well. [Equation 3](#EqCFBasic) can be looked at naively as an average. Two measurements are being averaged based on the users confidence in them during short time periods. The higher $a$ is chosen, the more the filtered measurement will rely on the fast measurement and will take longer to return to the slow measurement (which will be true when the aggressive maneuver has ended). The lower $a$ is chosen, the more the filtered measurement will rely on the slow measurement and will be more prone to short term noise. While this is not how these filters were formulated (the idea behind them was not averaging in this sense), it is good intuition to design these filters. The optimal choice for $a$ in a scenario will result in a filtered measurement that is able to capture very fast changes in the measurements as well as not have that measurement drift.
 
 As a more concrete example, consider an accelerometer and gyroscope measurement being fused to determine a roll angle estimate. Using the first order complementary filter, the roll estimate at time $t$ after a time step of $\Delta t$ could be determined by,
 
@@ -526,7 +548,7 @@ $$
     \theta(k+1) = \alpha(\theta(k) + \dot{\theta}_{gyro}\Delta t)+(1-\alpha)\theta_{acc} ,
 $$
 
-where, $\alpha = \frac{T}{T+\Delta t}$. Note, this is the same as \autoref{eq:CFBasic}.
+where, $\alpha = \frac{T}{T+\Delta t}$. Note, this is the same as [Equation 3](#EqCFBasic).
 
 This still begs the question, how should the cut off frequency be chosen? The answer is an optimization problem which is beyond the scope of this paper and usually needs to be adjusted in application if the optimization is done. The filter needs to be designed such that there are constant amplification and small phase loss of all measurements. More specifically, this means setting the cut off frequency high enough such that the largest range of frequencies is measured by the accurate but noisy sensor with slow dynamics (accelerometer, magnetometer, etc.). This avoids the drift typical in faster sensors. When motions occur that are at higher frequencies than the dynamics of the slow sensor, the cut off frequency should be set low enough such that the expected phase loss of the slower sensor is compensated by the faster sensor (gyroscope, encoders, etc.).
 
