@@ -317,7 +317,7 @@ Repeat all of the steps above to make the second motor assembly.
 </figure>
 <figure id="fig3_1f">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2811.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2811.png" width="300" height="300" />
         <figcaption>(f)</figcaption>
     </center>
 </figure>
@@ -376,7 +376,7 @@ First, assemble the Pololu casters. The process can be seen in Figure [3.3](phee
 </figure>
 <figure id="fig3_3d">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2685.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2685.png" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
@@ -445,7 +445,7 @@ Take the PCB assembled in Section 2 and slide it into the Pheeno with the Arduin
 </figure>
 <figure id="fig4_1b">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2705.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2705.png" width="300" height="300" />
         <figcaption>(b)</figcaption>
     </center>
 </figure>
@@ -551,7 +551,7 @@ Repeat the process for three more LED sub-assemblies.
 </figure>
 <figure id="fig4_4d">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2739.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2739.png" width="300" height="300" />
         <figcaption>(d)</figcaption>
     </center>
 </figure>
@@ -575,7 +575,7 @@ Repeat the process for three more LED sub-assemblies.
 </figure>
 <figure id="fig4_4h">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2746.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2746.png" width="300" height="300" />
         <figcaption>(h)</figcaption>
     </center>
 </figure>
@@ -585,7 +585,7 @@ With these four LED's in hand (Figure [4.5(a)](pheeno_construction_content#fig4_
 
 <figure id="fig4_5a">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2721.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2721.png" width="400" height="400" />
         <figcaption>(a)</figcaption>
     </center>
 </figure>
@@ -608,7 +608,7 @@ The first step of Section 2, in constructing the PCB assembly, was to insert the
 </figure>
 <figure id="fig4_6b">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2711.jpg" width="400" height="400" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2711.png" width="400" height="400" />
         <figcaption>(b) Front View.</figcaption>
     </center>
 </figure>
@@ -624,7 +624,7 @@ The last step for constructing the interior of the bot is to attach the FTDI boa
 </figure>
 <figure id="fig4_7b">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2729.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2729.png" width="300" height="300" />
         <figcaption>(b) USB Connection.</figcaption>
     </center>
 </figure>
@@ -658,7 +658,7 @@ The Raspberry Pi is a small, linux computer developed for educational purposes. 
 </figure>
 <figure id="fig5_1b">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2755.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2755.png" width="300" height="300" />
         <figcaption>(b) Parts.</figcaption>
     </center>
 </figure>
@@ -695,7 +695,7 @@ In order to power the computer, run cables from the PCB to the Pi. <font color="
 </figure>
 <figure id="fig5_2c">
     <center>
-        <img src="{{ site.baseurl }}/images/construction/IMG_2767.jpg" width="300" height="300" />
+        <img src="{{ site.baseurl }}/images/construction/IMG_2767.png" width="300" height="300" />
         <figcaption>(c) Pi Power Wires.</figcaption>
     </center>
 </figure>
